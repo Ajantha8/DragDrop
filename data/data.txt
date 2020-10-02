@@ -1,0 +1,15 @@
+--------------------------------------------------
+
+File Name			:	keystore.jks
+
+Key Store Password	:	QxF9avTTv6D2Wk9d
+
+Key Password		:	CPePVsXVBqn3RtPK
+
+Key Alias			:	amw
+
+--------------------------------------------------
+
+
+
+--------------------------------------------------
