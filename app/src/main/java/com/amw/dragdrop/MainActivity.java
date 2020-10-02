@@ -25,14 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "DRAG_DROP";
 
-    Button drag;
-    LinearLayoutCompat top, bottom;
-    TextView totalTV, successTV;
-    int total, fail, success = 0;
-
+    LinearLayoutCompat bottom;
     ImageView iv1, iv2, iv3, iv4, iv5, iv6, iv7, iv8, cIV;
     int clicked, lastClicked, completed = 0;
-    boolean isEn = false;
     MediaPlayer player;
 
     @SuppressLint("ClickableViewAccessibility")
@@ -43,11 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         player = MediaPlayer.create(MainActivity.this, R.raw.drop);
 
-//        drag = (Button) findViewById(R.id.drag);
-//        top = (LinearLayoutCompat) findViewById(R.id.top);
         bottom = (LinearLayoutCompat) findViewById(R.id.bottom);
-//        totalTV = (TextView) findViewById(R.id.total);
-//        successTV = (TextView) findViewById(R.id.success);
 
         iv1 = (ImageView) findViewById(R.id.iv1);
         iv2 = (ImageView) findViewById(R.id.iv2);
