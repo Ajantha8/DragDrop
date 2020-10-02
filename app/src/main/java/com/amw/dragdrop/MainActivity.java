@@ -50,47 +50,6 @@ public class MainActivity extends AppCompatActivity {
         iv7 = (ImageView) findViewById(R.id.iv7);
         iv8 = (ImageView) findViewById(R.id.iv8);
 
-        /*top.setOnDragListener(new View.OnDragListener() {
-            @Override
-            public boolean onDrag(View v, DragEvent event) {
-                final int action = event.getAction();
-
-                switch (action) {
-                    case DragEvent.ACTION_DRAG_STARTED:
-                        break;
-
-                    case DragEvent.ACTION_DRAG_LOCATION:
-                        break;
-
-                    case DragEvent.ACTION_DROP: {
-                        fail += 1;
-                        return true;
-                    }
-
-                    case DragEvent.ACTION_DRAG_ENDED: {
-                        total += 1;
-                        int value = total - fail;
-                        successTV.setText("Success : " + value);
-                        totalTV.setText("Total   : " + total);
-                        return true;
-                    }
-
-                    case DragEvent.ACTION_DRAG_ENTERED:
-                        break;
-
-                    case DragEvent.ACTION_DRAG_EXITED:
-                        break;
-
-                    default:
-                        break;
-
-                }
-
-                return true;
-            }
-
-        });*/
-
         bottom.setOnDragListener(new View.OnDragListener() {
             @Override
             public boolean onDrag(View v, DragEvent event) {
@@ -150,30 +109,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
-        /*drag.setOnTouchListener(new View.OnTouchListener() {
-            @RequiresApi(api = Build.VERSION_CODES.N)
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                ClipData clipData = ClipData.newPlainText("", "");
-                View.DragShadowBuilder shadow = new View.DragShadowBuilder(drag);
-                v.startDragAndDrop(clipData, shadow, null, 0);
-                return false;
-            }
-        });*/
-
-
-        /*iv.setOnTouchListener(new View.OnTouchListener() {
-            @RequiresApi(api = Build.VERSION_CODES.N)
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                ClipData clipData = ClipData.newPlainText("", "");
-                View.DragShadowBuilder shadow = new View.DragShadowBuilder(iv);
-                v.startDragAndDrop(clipData, shadow, null, 0);
-                clicked = R.drawable.as;
-                return false;
-            }
-        });*/
 
         iv1.setOnTouchListener(new View.OnTouchListener() {
             @SuppressLint("ClickableViewAccessibility")
