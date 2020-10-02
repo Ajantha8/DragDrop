@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.DragEvent;
 import android.view.MotionEvent;
@@ -253,7 +254,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void startAnimations() {
-        final Handler handler1 = new Handler();
+        final Handler handler1 = new Handler(Looper.getMainLooper());
         handler1.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -263,7 +264,8 @@ public class MainActivity extends AppCompatActivity {
                 player.start();
             }
         }, 500);
-        final Handler handler2 = new Handler();
+
+        final Handler handler2 = new Handler(Looper.getMainLooper());
         handler2.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -273,7 +275,8 @@ public class MainActivity extends AppCompatActivity {
                 player.start();
             }
         }, 1100);
-        final Handler handler3 = new Handler();
+
+        final Handler handler3 = new Handler(Looper.getMainLooper());
         handler3.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -283,7 +286,8 @@ public class MainActivity extends AppCompatActivity {
                 player.start();
             }
         }, 1700);
-        final Handler handler4 = new Handler();
+
+        final Handler handler4 = new Handler(Looper.getMainLooper());
         handler4.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -293,7 +297,6 @@ public class MainActivity extends AppCompatActivity {
                 player.start();
             }
         }, 2300);
-
     }
 
     @Override
