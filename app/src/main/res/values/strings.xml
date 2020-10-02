@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Card Game</string>
+    <string name="drag">DRAG</string>
+    <string name="drop_here">Drop Here</string>
+    <string name="as">AS</string>
+    <string name="jc">JC</string>
+    <string name="qd">QD</string>
+    <string name="kh">KH</string>
 </resources>
