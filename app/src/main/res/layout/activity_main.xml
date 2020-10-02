@@ -65,7 +65,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DRAG"
+            android:text="@string/drag"
             android:visibility="gone" />
 
     </RelativeLayout>
@@ -88,7 +88,8 @@
                 android:id="@+id/iv5"
                 android:layout_width="78dp"
                 android:layout_height="120dp"
-                android:layout_marginEnd="5dp" />
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/as" />
 
             <ImageView
                 android:id="@+id/iv6"
@@ -96,7 +97,8 @@
                 android:layout_height="120dp"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="-110dp"
-                android:layout_marginEnd="5dp" />
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/jc" />
 
             <ImageView
                 android:id="@+id/iv7"
@@ -104,19 +106,21 @@
                 android:layout_height="120dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="-110dp"
-                android:layout_marginEnd="5dp" />
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/qd" />
 
             <ImageView
                 android:id="@+id/iv8"
                 android:layout_width="78dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="36dp"
-                android:layout_marginTop="-110dp" />
+                android:layout_marginTop="-110dp"
+                android:contentDescription="@string/kh" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Drop Here"
+                android:text="@string/drop_here"
                 android:visibility="gone" />
 
             <TextView
