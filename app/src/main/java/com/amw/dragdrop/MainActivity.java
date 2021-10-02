@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     private int clicked, lastClicked, completed = 0;
     private MediaPlayer player;
 
-    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
